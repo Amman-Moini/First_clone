@@ -1,0 +1,1090 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Acompworld: Software Development Company
+</title><meta name="description" content="We are an Indian-based Software Development Company serving clients globally since 2012. Connect us to get advanced software solutions for enterprises and startups." /><link rel="canonical" href="https://acompworld.com/" />
+<link href="img/fevicon/favicon.ico" rel="shortcut icon" type="image/favicon.icon" />
+<meta charset="UTF-8">
+<meta name="description" content="Description">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<!-- Bootstrap 3.4.1 -->
+<link rel="stylesheet" href="css2022/bootstrap.min.css">
+<link rel="stylesheet" href="css2022/font-awesome.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="css2022/style.css">
+<link rel="stylesheet" href="css2022/MediaQuery.css">
+<!-- Slider -->
+<link rel="stylesheet" href="css2022/owl.carousel.css">
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<!-- Google tag (gtag.js) New Code Jan 2023 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCW2G31Y5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDCW2G31Y5');
+</script>
+
+
+<!--Zoho SalesIQ Live Chat-->
+<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+{widgetcode:"bc60ddf64d039b43f2e8ce8281cbd9ef75773464a0fc84b9061ad332fdd9dd46", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37526375-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-37526375-1');
+</script>
+
+<!-- MS Clarity Analytics -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+	c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+	t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+	y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "3wd1shl3q4");
+</script>
+
+
+<script src="https://desk.zoho.com/portal/api/feedbackwidget/526320000000400111?orgId=720754218&displayType=popout"></script>
+
+
+
+    <script>
+        function showContent() {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "progressBar": false,
+                "preventDuplicates": false,
+                "positionClass": "toast-top-center",
+                "showDuration": "400",
+                "hideDuration": "1000",
+                "timeOut": "7000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            toastr["success"]("Successfully Submited");
+
+        }
+    </script>
+
+
+    <script>
+        function validateCV() {
+            var name = document.getElementById('txtCName');
+            var position = document.getElementById('txtCPosition');
+            var phone = document.getElementById('txtCPhone');
+            var email = document.getElementById('txtCEmail');
+            var location = document.getElementById('txtCLocation');
+            var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            var b = filter.test(email.value);
+
+            if (name.value == "") {
+                document.getElementById('lblCname').innerHTML = "Please enter full name";
+                document.getElementById('lblCEmail').innerHTML = "";
+                document.getElementById('lblCPhone').innerHTML = "";
+                document.getElementById('lblCPosition').innerHTML = "";
+                document.getElementById('lblCLocation').innerHTML = "";
+                return false;
+            }
+            if (email.value == "") {
+                document.getElementById('lblCEmail').innerHTML = "Please enter email";
+                document.getElementById('lblCname').innerHTML = "";
+                document.getElementById('lblCPhone').innerHTML = "";
+                document.getElementById('lblCPosition').innerHTML = "";
+                document.getElementById('lblCLocation').innerHTML = "";
+                return false;
+            }
+            if (b == false) {
+
+                document.getElementById('lblCEmail').innerHTML = "Please enter valid email";
+                return false;
+            }
+
+            if (phone.value == "") {
+
+                document.getElementById('lblCPhone').innerHTML = "Please enter phone";
+                document.getElementById('lblCEmail').innerHTML = "";
+                document.getElementById('lblCname').innerHTML = "";
+                document.getElementById('lblCPosition').innerHTML = "";
+                document.getElementById('lblCLocation').innerHTML = "";
+                return false;
+            }
+            if (/^\d{10}$/.test(phone.value)) {
+                // value is ok, use it
+            } else {
+                document.getElementById('lblCPhone').innerHTML = "Invalid number must be ten digits";
+                return false;
+            }
+
+            if (position.value == "") {
+                document.getElementById('lblCPosition').innerHTML = "Please enter position";
+                document.getElementById('lblCPhone').innerHTML = "";
+                document.getElementById('lblCEmail').innerHTML = "";
+                document.getElementById('lblCname').innerHTML = "";
+                document.getElementById('lblCLocation').innerHTML = "";
+
+                return false;
+            }
+
+            if (location.value == "") {
+                document.getElementById('lblCLocation').innerHTML = "Please enter your current Location";
+                 document.getElementById('lblCPhone').innerHTML = "";
+                document.getElementById('lblCEmail').innerHTML = "";
+                document.getElementById('lblCname').innerHTML = "";
+                document.getElementById('lblCLocation').innerHTML = "";
+
+                 return false;
+             }
+            if (document.getElementById("UploadCV").value == "") {
+                document.getElementById('lblMsgCV').innerHTML = "Please Upload your CV";
+                document.getElementById('lblCPosition').innerHTML = "";
+                document.getElementById('lblCPhone').innerHTML = "";
+                document.getElementById('lblCEmail').innerHTML = "";
+                document.getElementById('lblCname').innerHTML = "";
+                document.getElementById('lblCLocation').innerHTML = "";
+                return false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        var renderRecaptcha = function () {
+            grecaptcha.render('ReCaptchContainer', {
+                'sitekey': '6Lc0-a8dAAAAAJ88FqtLo2PgTEgG6IG7BDq-fKr5',
+                'callback': reCaptchaCallback,
+                theme: 'light', //light or dark    
+                type: 'image',// image or audio    
+                size: 'normal'//normal or compact    
+            });
+        };
+
+        var reCaptchaCallback = function (response) {
+            if (response !== '') {
+                jQuery('#lblCaptchaMessage').css('color', 'green').html('Success');
+                btnSubmitCV.disabled = false;
+
+            }
+        };
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Acompworld",
+  "image": "https://acompworld.com/images/acompworld-gray.png",
+  "@id": "",
+  "url": "https://acompworld.com/",
+  "telephone": "07024224717",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sector 62",
+    "addressLocality": "Noida",
+    "postalCode": "201301",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.6116483,
+    "longitude": 77.3611806
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "09:30",
+    "closes": "18:30"
+  },
+  "sameAs": [
+    "https://www.facebook.com/acompworld?_rdr=p",
+    "https://www.linkedin.com/company/acompworld",
+    "https://twitter.com/acompworld"
+  ] 
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Acompworld",
+  "alternateName": "AcompworldTechnosoft Private Limited",
+  "url": "https://acompworld.com/",
+  "logo": "https://acompworld.com/images/acompworld-gray.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "070242 24717",
+    "contactType": "customer service",
+    "areaServed": "IN",
+    "availableLanguage": ["en","Hindi"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/acompworld?_rdr=p",
+    "https://twitter.com/acompworld",
+    "https://www.linkedin.com/company/acompworld"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://acompworld.com/",
+  "logo": "https://acompworld.com/images/acompworld-gray.png"
+}
+</script>
+
+</head>
+<body>
+    <form method="post" action="./" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5NjI3MDQyMDgPZBYCAgMPZBYEAgUPFgIeC18hSXRlbUNvdW50AgYWDGYPZBYCZg8VAy5pbWFnZXMvcG9ydGZvbGlvL3BvcnRmb2xpb0NhcmRfMTI1MjAyMjkxODIucG5nHVJhaWwgQ29hY2ggTWFpbnRlbmFuY2UgU3lzdGVtggI8cD5SQ00gbW9iaWxlIGFwcCBlbXBvd2VycyB0aGUgY29hY2ggaW5zcGVjdGlvbiBhbmQgbWFpbnRlbmFuY2UgdGVhbXMgd2l0aCBkaWdpdGFsIHRvb2xzIHRvIGJvb3N0IHRoZWlyIHdvcmsgZWZmaWNpZW5jeSBhbmQgZW5zdXJlcyB0aGF0IGFsbCBzY2hlZHVsZWQgbWFpbnRlbmFuY2UgYWN0aXZpdGllcyBhcmUgZG9uZSBvbiB0aW1lLiBJdCBhbHNvIGhhcyBhIHBvd2VyZnVsIHdlYi1iYXNlZCBNSVMgYW5kIGRhdGEgYW5hbHlzaXMgbW9kdWxlLjwvcD5kAgEPZBYCZg8VAzBpbWFnZXMvcG9ydGZvbGlvL3BvcnRmb2xpb0NhcmRfMTI1MjAyMjExNDg1Ni5wbmciUG93ZXIgUGxhbnQgQW5hbHl0aWNzIC0gUGxhbnQgTGl2ZfsBVGhpcyBmaXJzdCBvZiBpdHMga2luZCBhcHAgaW4gSW5kaWEsIGVuYWJsZXMgbGl2ZSBtb25pdG9yaW5nIG9mIDUwKyBwb3dlciBzdGF0aW9ucyBvZiBJbmRpYeKAmXMgbGFyZ2VzdCBwb3dlciBwcm9kdWNlciDigJMgTlRQQy4gQXBwIGhhcyBhIGNvbXByZWhlbnNpdmUgc2V0IG9mIGluc2lnaHRmdWwgcmVwb3J0cyBhbmQgYSB2aXN1YWwgZGFzaGJvYXJkIGNvdmVyaW5nIGtleSBvcGVyYXRpb25hbCBhbmQgcGVyZm9ybWFuY2UgbWV0cmljcy5kAgIPZBYCZg8VAzBpbWFnZXMvcG9ydGZvbGlvL3BvcnRmb2xpb0NhcmRfMTI1MjAyMjE0MjgzNC5wbmcjRXhwb3J0IEltcG9ydCBCYW5rIG9mIEluZGlhIFdlYnNpdGUAZAIDD2QWAmYPFQMwaW1hZ2VzL3BvcnRmb2xpby9wb3J0Zm9saW9DYXJkXzEyNTIwMjIxNDQ2MzcucG5nKUVWIENoYXJnaW5nIFN0YXRpb24gQWdncmVnYXRvciBBcHAgLSBFdnp5qgE8cD5BbiB1cGNvbWluZyBhZ2dyZWdhdG9yIHBsYXRmb3JtIGZvciBFViBjaGFyZ2luZyBzdGF0aW9ucyBpbiBJbmRpYS4gQWxsb3dzIHRoZSBFViBvd25lciB0aGUgY29tZm9ydCBvZiBib29raW5nIGNoYXJnaW5nIHNlc3Npb24gYXQgcGFydG5lcmluZyBzdGF0aW9ucyBjb3VudHJ5IHdpZGUuPC9wPmQCBA9kFgJmDxUDMGltYWdlcy9wb3J0Zm9saW8vcG9ydGZvbGlvQ2FyZF8xMjUyMDIyMTQ0MTQ4LnBuZyFGaWVsZCBTZXJ2aWNlcyBNYW5hZ2VtZW50IC0gTWVwY2/6AU1lcGNvIGlzIGEgRmllbGQgU2VydmljZSBNYW5hZ2VtZW50IChGU00pIHNvZnR3YXJlIHRvb2wgZGVzaWduZWQgZm9yIEZpZWxkIFNlcnZpY2UgQ29tcGFuaWVzIHdpdGggaW4gYW55IGluZHVzdHJ5IHdoaWNoIHByb3ZpZGUgZXF1aXBtZW50IGluc3RhbGxhdGlvbiwgbWFpbnRlbmFuY2UgYW5kIHJlcGFpciBzZXJ2aWNlcywgaGVscGluZyB0aGVtIHNpbXBsaWZ5aW5nIGFuZCBzdHJlYW1saW5pbmcgYWxsIGJ1c2luZXNzIHByb2Nlc3Nlcy5kAgUPZBYCZg8VAzBpbWFnZXMvcG9ydGZvbGlvL3BvcnRmb2xpb0NhcmRfMTI1MjAyMjExNDg1Ni5wbmciUG93ZXIgUGxhbnQgQW5hbHl0aWNzIC0gUGxhbnQgTGl2ZfsBVGhpcyBmaXJzdCBvZiBpdHMga2luZCBhcHAgaW4gSW5kaWEsIGVuYWJsZXMgbGl2ZSBtb25pdG9yaW5nIG9mIDUwKyBwb3dlciBzdGF0aW9ucyBvZiBJbmRpYeKAmXMgbGFyZ2VzdCBwb3dlciBwcm9kdWNlciDigJMgTlRQQy4gQXBwIGhhcyBhIGNvbXByZWhlbnNpdmUgc2V0IG9mIGluc2lnaHRmdWwgcmVwb3J0cyBhbmQgYSB2aXN1YWwgZGFzaGJvYXJkIGNvdmVyaW5nIGtleSBvcGVyYXRpb25hbCBhbmQgcGVyZm9ybWFuY2UgbWV0cmljcy5kAgkPZBYCZg9kFgICAQ8WAh4HVmlzaWJsZWhkZLClXEQYf9YyDrTcSgtHxPnsqTcLsuQifuQ3JFNwsnea" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=5rnl_fxwn5aHzJOfqT-hCd2RlYEXKOrkFEPQPrDbm9ttL-SAAXc_VHOnfs2oSDSMYwvCzAUy7nD8nxCakz8o8OWz-cn55B9rLZ117iyhiko1&amp;t=637814851746327080" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=QV5935vxjNCnJqedmG3V-WrRJcKmepO0z33cHp8KOdeBLcjQgSkQTfi-rYGBp-lYJS6twMDIvRzVKG7v0BMn1AX9McnwO43OcBcQuRsO2uRcaLKZzu-I7BqrikLdJZxX274q5TH3G6B4oApxa1AXRQ2&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=ySqqNNse97wYj36ooS4tmiZXKCJTeM3lJs2YkYumnF_KUlubXp9q2JA15QZIuusIP95CLcSD9h3R25dQ-NhsfnXezp8x6F0G4dpyCzqFcDwAeo7dTSFGBf8FX0dXS1A-MxUXyKHqFSECjKUofaVSTQ2&amp;t=7c776dc1" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALVN+4f4gb10Ce5zk687uXFIF3M+HYlKCbBj3zl7ccu77nqG+moY+mv+kYHGAuZ05/aJXMvHMia+IpZZlWiZlCE" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tupdatepnl1','updatepnl1'], [], [], 90, '');
+//]]>
+</script>
+
+
+        <!--Header - Start-->
+        
+
+<header class="topnavbar">
+    <nav class="navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="default.aspx">
+                    <img src="images/acompworld-gray.png" />
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-links">
+                <ul class="nav navbar-nav nav-right">
+                    <li class="link-li">
+                        <a id="header_toplink_services" class="main_menu" style="cursor:pointer">Services <span class="caret"></span></a>
+                        <ul class="subMenu">
+							<li><a href="service.aspx">Overview</a></li>
+                            <li><a href="service-enterprise-software.aspx">Enterprise Software</a></li>
+                            <li><a href="service-startup.aspx">Startup Apps & Websites</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="link-li"><a href="work.aspx" id="header_toplink_ourwork" class="main_menu">Work</a></li>
+                    <li class="link-li">
+                        <a id="header_toplink_company" class="main_menu" style="cursor:pointer">Company <span class="caret"></span></a>
+                        <ul class="subMenu">
+                            <li><a href="about.aspx">About Us</a></li>
+                            <li><a href="careers.aspx">Careers</a></li>
+                         
+                        </ul>
+                    </li>
+					 <li class="link-li"><a href="blog.aspx" id="header_toplink_ourblog" class="main_menu">Our Blog</a></li>
+                    <li class="link-btn"><a href="contact.aspx" class="btn blackbtn">Let's Connect</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- For Top Maneu Dropdown -->
+<script>
+    // Hide SubMenus.
+    $(".subMenu").hide();
+
+    // Shows SubMenu when it's parent is hovered.
+    $(".subMenu").parent("li").hover(function () {
+        $(this).find(">.subMenu").not(':animated').slideDown(300);
+        $(this).toggleClass("active ");
+    });
+
+    // Hides SubMenu when mouse leaves the zone.
+    $(".subMenu").parent("li").mouseleave(function () {
+        $(this).find(">.subMenu").slideUp(150);
+    });
+
+    // Prevents scroll to top when clicking on <a href="#"> 
+    $("a[href=\"#\"]").click(function () {
+        return false;
+    });
+</script>
+
+        <!--Header - End-->
+
+        <!--Banner-->
+        <section class="banner_section home_bg">
+            <div class="container">
+                <div class="banner_box">
+                    <div class="banner_text">
+                        <div class="bnr_wrap">
+                            <h1>Software, Web & App Development Partner for Startups to Fortune 500 Companies </h1>
+                            <div class="company_info">
+                                <h4><span>9+ Years</span> <span>200+ Clients</span> <span>450+ Projects</span> </h4>
+                            </div>
+                        </div>
+                        <div class="client_logo">
+                            <div class="img_block">
+                                <img src="images2022/ntpc-logo.png" alt="" />
+                            </div>
+                            <div class="img_block">
+                                <img src="images2022/AEGIS-Logo.png" alt="" />
+                            </div>
+                            <div class="img_block">
+                                <img src="images2022/lancoLogo.png" alt="" />
+                            </div>
+                            <div class="img_block">
+                                <img src="images2022/coil-india.png" alt="" />
+                            </div>
+                            <div class="img_block">
+                                <img src="images2022/RADAGroup.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner_card">
+                        <div class="info_box ib_top">
+                            <span class=" tri_box1"></span>
+                            <div class="info_icon ">
+                                <img src="images2022/enterprise_icon.svg" alt="" />
+                            </div>
+                            <div class="info_text">
+                                <h2>Enterprise</h2>
+                                <p>
+                                    Are you a mid to large sized business? We can help you leverage<span class="text_red"> Cloud, Mobile, Analytics, AI</span> and thrive in the digital era!
+
+                                </p>
+                                <a href="service-enterprise-software.aspx" class="btn black_outline">Learn more <i
+                                    class="fa fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="info_box ib_bottom">
+                            <span class=" tri_box1"></span>
+                            <div class="info_icon">
+                                <img src="images2022/startup_icon.svg" alt="" />
+                            </div>
+                            <div class="info_text">
+                                <h2 class="">Startup</h2>
+                                <p>
+                                    Treat us as your Partner, Dedicated Team and Virtual CTO. We will bring your next big idea to life as <span class="text_red">Mobile App or SaaS </span>Product!
+
+
+                                </p>
+                                <a href="service-startup.aspx" class="btn black_outline">Learn more <i
+                                    class="fa fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Who we are-->
+        <section class="who_we_are padding100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading">
+                            <h2 class="heading ">Who we are</h2>
+                            <p>
+                                We are an India based software development company, serving clients globally since 2012 by offering a<br />
+                                wide range of software, web and mobile app development services. 
+
+                            </p>
+                            <img src="images2022/pattarn3.svg" alt="" class="pattarn3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row box_space">
+                    <div class="col-lg-4 col-md-4 ">
+                        <div class="we_are_box bg_color_6">
+                            <img src="images2022/we_are1.svg" alt="" class="" />
+                            <p class="we_are_text">
+                                We are a customer-centric software development company, providing custom software development services to everyone, including small startups to large business organizations. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="we_are_box bg_color_3">
+                            <img src="images2022/we_are2.svg" alt="" class="" />
+                            <p class="we_are_text">
+                                Our dedicated team of experts is capable of assisting you during the entire journey of software development from mapping ideas to building fully functional software that helps you thrive in the digital era.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 ">
+                        <div class="we_are_box bg_color_4">
+                            <img src="images2022/we-are3.svg" alt="" class="" />
+                            <p class="we_are_text">
+                                Over the years, our team has developed strong domain knowledge in a vast array of sectors that helps us in understanding the actual needs of our clients and delivering the best possible solution. 
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfoliyo -->
+        <section class="Portfoliyo_section bg_color_1 padding100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading pl-15">
+                            <h2 style="color: #fff;">Portfolio</h2>
+                            <p style="color: #fff;">Recent projects that our team loved working on</p>
+                            <img src="images2022/pattarn_bg1.svg" alt="" class="pattarn3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div id="" class="owl-carousel home_portfoliyo">
+                    
+                            <div class="webinor_slide">
+                                <div class="webinor_card">
+                                    <div class="web_card_img">
+                                        <img src='images/portfolio/portfolioCard_12520229182.png' class="web_bnrimg" alt="" />
+                                        <div class="port_overlay overlay_content">
+                                            
+                                            <h4>Rail Coach Maintenance System</h4>
+                                            <p>
+                                                <p><p>RCM mobile app empowers the coach inspection and maintenance teams with digital tools to boost their work efficiency and ensures that all scheduled maintenance activities are done on time. It also has a powerful web-based MIS and data analysis module.</p></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="webinor_slide">
+                                <div class="webinor_card">
+                                    <div class="web_card_img">
+                                        <img src='images/portfolio/portfolioCard_1252022114856.png' class="web_bnrimg" alt="" />
+                                        <div class="port_overlay overlay_content">
+                                            
+                                            <h4>Power Plant Analytics - Plant Live</h4>
+                                            <p>
+                                                <p>This first of its kind app in India, enables live monitoring of 50+ power stations of India’s largest power producer – NTPC. App has a comprehensive set of insightful reports and a visual dashboard covering key operational and performance metrics.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="webinor_slide">
+                                <div class="webinor_card">
+                                    <div class="web_card_img">
+                                        <img src='images/portfolio/portfolioCard_1252022142834.png' class="web_bnrimg" alt="" />
+                                        <div class="port_overlay overlay_content">
+                                            
+                                            <h4>Export Import Bank of India Website</h4>
+                                            <p>
+                                                <p></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="webinor_slide">
+                                <div class="webinor_card">
+                                    <div class="web_card_img">
+                                        <img src='images/portfolio/portfolioCard_1252022144637.png' class="web_bnrimg" alt="" />
+                                        <div class="port_overlay overlay_content">
+                                            
+                                            <h4>EV Charging Station Aggregator App - Evzy</h4>
+                                            <p>
+                                                <p><p>An upcoming aggregator platform for EV charging stations in India. Allows the EV owner the comfort of booking charging session at partnering stations country wide.</p></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="webinor_slide">
+                                <div class="webinor_card">
+                                    <div class="web_card_img">
+                                        <img src='images/portfolio/portfolioCard_1252022144148.png' class="web_bnrimg" alt="" />
+                                        <div class="port_overlay overlay_content">
+                                            
+                                            <h4>Field Services Management - Mepco</h4>
+                                            <p>
+                                                <p>Mepco is a Field Service Management (FSM) software tool designed for Field Service Companies with in any industry which provide equipment installation, maintenance and repair services, helping them simplifying and streamlining all business processes.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="webinor_slide">
+                                <div class="webinor_card">
+                                    <div class="web_card_img">
+                                        <img src='images/portfolio/portfolioCard_1252022114856.png' class="web_bnrimg" alt="" />
+                                        <div class="port_overlay overlay_content">
+                                            
+                                            <h4>Power Plant Analytics - Plant Live</h4>
+                                            <p>
+                                                <p>This first of its kind app in India, enables live monitoring of 50+ power stations of India’s largest power producer – NTPC. App has a comprehensive set of insightful reports and a visual dashboard covering key operational and performance metrics.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="btn_center">
+                    <a href="../work.aspx" class="btn white_outline ">View all Projects</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Why Choose us -->
+        <section class="about_us bg_color_4 padding100">
+            <div class="container">
+                <div class="aboutus_details">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading text-center">
+                                <h2 class="">Why Acompworld</h2>
+                                <p>
+                                    There are reasons why we are the preferred choice of leading corporates<br />
+                                    to startups and small businesses
+
+                                </p>
+                                <img src="images2022/pattarn_bg4.svg" alt="" class="pattarn3" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row box_space">
+                        <div class="col-md-4 ">
+                            <div class="about_box">
+                                <div class="about_box_img">
+                                    <img src="images2022/glob.svg" alt="" class="glob_icon" />
+                                </div>
+                                <div class="about_box_info">
+                                    <h4>360 ° Approach</h4>
+                                    <p>
+                                        From ideation to delivery, and ongoing support, we cover the full lifecycle of enterprise applications.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_box">
+                                <div class="about_box_img">
+                                    <img src="images2022/client.svg" alt="" />
+                                </div>
+                                <div class="about_box_info">
+                                    <h4 class="">Client Centric</h4>
+                                    <p>
+                                        Our boutique format allows us to maintain a highly customized approach and build a long-term partnership.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_box">
+                                <div class="about_box_img">
+                                    <img src="images2022/Domain-Experts.svg" alt="" class="de_icon" />
+                                </div>
+                                <div class="about_box_info">
+                                    <h4 class="">Domain Experts</h4>
+                                    <p>
+                                        We possess exceptional domain expertise and in-depth knowledge of niche technologies.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_box">
+                                <div class="about_box_img">
+                                    <img src="images2022/Time-to-Market.svg" alt="" />
+                                </div>
+                                <div class="about_box_info">
+                                    <h4 class="">Time-to-Market</h4>
+                                    <p>
+                                        High level expertise and a number of solutions accelerators enable fast product rollout and quick customizations.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_box">
+                                <div class="about_box_img">
+                                    <img src="images2022/A-Class Team.svg" alt="" />
+                                </div>
+                                <div class="about_box_info">
+                                    <h4 class="">A-Class Team</h4>
+                                    <p>
+                                        We leverage unparalleled software engineering expertise of our team to ensure client success.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_box">
+                                <div class="about_box_img">
+                                    <img src="images2022/Great-Value.svg" alt="" />
+                                </div>
+                                <div class="about_box_info">
+                                    <h4 class="">Great Value</h4>
+                                    <p>
+                                        We work as a partner co-creating the best fit and most cost effective solution for your business.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Note from the CEO-->
+        <section class="note_from_ceo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading">
+                            <h2 class="heading ">Note from the CEO</h2>
+                            <img src="images2022/pattarn3.svg" alt="" class="pattarn3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row box_space">
+                    <div class="col-md-7 col-sm-7">
+                        <div class="note_side">
+                            <h3 class="sub_heading">“Acompworld is a visionary and reliable technology partner for world-class businesses and disruptive startups.”
+                            </h3>
+                            <p class="ceo_note">
+                                We bring to table a rare blend of technology expertise and strong business domain knowledge at affordable prices, enabling us to provide an unmatched return on your investments.
+                                        Our primary focus is to always deliver high quality services backed by excellent after sales support to gain trust and build long-term relationships with our clients. 
+
+                            </p>
+                            <h4 class="ceo_note2">I would be happy to connect with you to understand your business challenges and help you overcome them with the right technology..
+                            </h4>
+                            <div class="image_side forxs">
+                                <img src="images2022/manish.png" alt="" />
+                            </div>
+                            <div class="contactus">
+                                <span>Connect with Manish</span>
+                                <a href="https://twitter.com/manishshri" target="_blank" title="Connect with Twitter">
+                                    <i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/manishshrivast/" target="_blank" title="Connect with Linkedin">
+                                    <i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <div class="image_side forweb">
+                            <img src="images2022/manish.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Now Live on Blog -->
+        <section class="blogs padding100 bg_color_2" style="display: none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading">
+                            <h2 class="">Now Live on Blog</h2>
+                            <p>Get a sneak peek of the latest trends in the tech world.</p>
+                            <img src="images2022/pattarn3.svg" alt="" class="pattarn3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_box">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="blog_card">
+                                <div class="blog_card_img">
+                                    <img src="images2022/blog1.png" class="blog_bnrimg" alt="">
+                                </div>
+                                <div class="blog_footer">
+                                    <h4 class="blog_title">How quantum computing impacts our lives?
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog_card">
+                                <div class="blog_card_img">
+                                    <img src="images2022/blog2.png" class="blog_bnrimg" alt="" />
+                                </div>
+                                <div class="blog_footer">
+                                    <h4 class="blog_title">Why businesses are adopting blockchain technology?
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog_card">
+                                <div class="blog_card_img">
+                                    <img src="images2022/blog3.png" class="blog_bnrimg" alt="" />
+                                </div>
+                                <div class="blog_footer">
+                                    <h4 class="blog_title">All you need to know about NFT.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_center col-md-12">
+                            <a href="#" class="btn black_outline">Read all our Blogs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Call to action-->
+        <section class="paddingtop100">
+            <div class="container">
+                <div class="cta_box">
+                    <span class="line1"></span>
+                    <div class="cta_box_left">
+                        <div class="cta_wrap">
+                            <h2>Have a project idea? let's come together to build something great</h2>
+                            <a href="contact.aspx" class="btn blackbtn">Talk to an Expert</a>
+                        </div>
+                    </div>
+                    <div class="cta_box_right">
+                        <div class="cta_wrap2">
+                            <h2>Want to work in an <span class=" full_outline">innovation-driven,</span> fast growing
+                                company?
+                            </h2>
+                            <a class="btn blackbtn" href="javascript:__doPostBack(&#39;ctl04&#39;,&#39;&#39;)">Drop your CV </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Drop Your CV-->
+        <div id="updatepnl1">
+	
+                <!-- modal- Drop Your CV -->
+                
+                <!-- /.modal -->
+            
+</div>
+
+
+        <script src="https://www.google.com/recaptcha/api.js?onload=renderRecaptcha&render=explicit" async defer>
+        </script>
+
+        <!--Footer - Start-->
+        
+
+<footer>
+            <span class="line3"></span>
+            <!-- <span class="line1"></span> -->
+            <div class=" container">
+                <div class="top_footer">
+                    <div class="flexrow">
+                        <div class="divlogo">
+                            <img src="images2022/acompworld-icon1.png" class="ftlogoicon">
+                            <p class="copyright">©2022 Acompworld</p>
+                        </div>
+                        <div class="flexrow2">
+                            <div class="flexdiv ">
+                                <h4 class="footer-heading">Find your way</h4>
+                                <div class="menu-quick-links">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="Default.aspx"> Home</a></li>
+                                        <li class="menu-item"><a href="service-enterprise-software.aspx"> Enterprise</a></li>
+                                        <li class="menu-item"><a href="service-startup.aspx"> Startup</a></li>
+                                        <li class="menu-item"><a href="../work.aspx"> Projects</a></li>
+                                        <li class="menu-item"><a href="about.aspx"> About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flexdiv">
+                                <h4 class="footer-heading">Services</h4>
+                                <div class="menu-quick-links">
+                                    <ul class="menu ">
+                                        <li class="menu-item"><a href="service-enterprise-software.aspx">Enterprise Software</a></li>
+                                        <li class="menu-item"><a href="service-startup.aspx">Startup Apps & Websites</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flexdiv">
+                                <h4 class="footer-heading">More from us</h4>
+                                <div class="menu-quick-links">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="careers.aspx">Careers</a></li>
+                                        <li class="menu-item"><a href="blog.aspx"> Our Blog</a></li>
+                                        <li class="menu-item"><a href="contact.aspx"> Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flexdiv ">
+                                <h4 class="footer-heading">Channels</h4>
+                                <div class="menu-quick-links">
+                                    <ul class="menu">
+                                        <li class="menu-item">
+                                            <a href="https://www.linkedin.com/company/acompworld" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="https://www.facebook.com/acompworld?_rdr=p" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="https://twitter.com/acompworld" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+                                        </li>
+                                        <!--<li class="menu-item">
+                                            <a href="https://twitter.com/acompworld" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+                                        </li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+<footer style="display:none">
+   
+    <div class=" container">
+        <div class="top_footer">
+            <div class="row">
+                    <div class="col-lg-2 col-xs-12 col-sm-4 ftlogo">
+                        <img src="images2022/acompworld-icon1.png" class="ftlogoicon" />
+                        <p class="copyright">&copy;2022 Acompworld</p>
+                    </div>
+              
+                    <div class="col-lg-2 col-xs-6 col-sm-4">
+                        <h4 class="footer-heading">Find your way</h4>
+                        <div class="menu-quick-links">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="default.aspx">Home</a></li>
+                                <li class="menu-item"><a href="service-enterprise-software.aspx">Enterprise</a></li>
+                                <li class="menu-item"><a href="service-startup.aspx">Startup</a></li>
+                                <li class="menu-item"><a href="../our-work.aspx">Projects</a></li>
+                                <li class="menu-item"><a href="about.aspx">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-4">
+                        <h4 class="footer-heading">Services</h4>
+                        <div class="menu-quick-links">
+                            <ul class="menu notlink">
+                                <li class="menu-item"><a href="#">UI/UX Design</a></li>
+                                <li class="menu-item"><a href="#">Development</a></li>
+                                <li class="menu-item"><a href="#">AI</a></li>
+                                <li class="menu-item"><a href="#">Digital Transformation</a></li>
+                                <li class="menu-item"><a href="#">Azure</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-4">
+                        <h4 class="footer-heading">More from us</h4>
+                        <div class="menu-quick-links">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="careers.aspx">Career</a></li>
+                                <li class="menu-item"><a href="blog.aspx">Our Blog</a></li>
+                                <li class="menu-item"><a href="contact.aspx">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-4">
+                        <h4 class="footer-heading">Channels</h4>
+                        <div class="menu-quick-links">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="https://www.linkedin.com/company/acompworld" target="_blank"><i
+                                        class="fa fa-linkedin"></i>Linkedin</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="https://www.facebook.com/acompworld?_rdr=p" target="_blank"><i
+                                        class="fa fa-facebook"></i>Facebook</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="https://twitter.com/acompworld" target="_blank"><i
+                                        class="fa fa-twitter"></i>Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-6 col-sm-4">
+                        <h4 class="footer-heading">Locations</h4>
+                        <div class="menu-quick-links">
+                            <ul class="menu notlink">
+                                <li class="menu-item"><a href="careers.aspx">Bhopal</a></li>
+                                <li class="menu-item"><a href="blog.aspx">Noida</a></li>
+                                <li class="menu-item"><a href="contact.aspx">Singrauli</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- row -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <!--Footer - End-->
+
+        <script type="text/javascript">
+            var input = document.getElementById('UploadCV');
+            var infoArea = document.getElementById('prevfileuploaderCV');
+
+            input.addEventListener('change', showFileName);
+
+            function showFileName(event) {
+
+                // the change event gives us the input it occurred in 
+                var input = event.srcElement;
+
+                // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+                var fileName = input.files[0].name;
+
+                // use fileName however fits your app best, i.e. add it into a div
+                infoArea.textContent = fileName;
+            }
+        </script>
+
+        <!--For Portfolio Slider-->
+        <script>
+            $('.home_portfoliyo').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                nav: true,
+                loop: true,
+                stagePadding: 120,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    980: {
+                        items: 2
+                    },
+                    1199: {
+                        items: 3
+                    }
+                }
+            })
+
+        </script>
+
+        <!-- For Back to Top Button -->
+        <script>
+            var btn = $('#Back-to-top');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '300');
+            });
+        </script>
+    </form>
+
+</body>
+</html>

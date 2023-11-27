@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accompworld</title>
+</head>
+<body>
+<header class="header">
+    <style>
+        .flex {
+            display: flex;
+        }
+    .left{
+        width: 200px;
+     }
+
+    .mid{
+        margin: 2px 2px 2px 20rem;
+        width: fit-content;
+
+
+     }
+    .right{
+        margin-left: auto;
+        margin-right: 10rem;
+     }
+     .navbar{
+        display: inline-block;
+        
+     }
+     .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        
+     }
+
+     .navbar li a{
+        text-decoration: none;
+        padding: 34px 23px;
+        color: black;
+      /*  margin:auto;*/
+     }
+     /*.navbar li a:hover, .navbar li a.active{
+        text-decoration: none;
+        color:rgb(0, 0, 0)
+        
+     }*/
+     .left img{
+        width: 250px;
+     }
+     .left div{
+        line-height: 19px;
+        text-align: center;
+        font-size:26px;
+     }
+     .btn{
+        margin: 0px 9px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 20px 40px;
+        border: 2px solid rgb(10, 10, 10);
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+     }
+     .btn:hover{
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+     }
+     .tag{
+        line-height: 6px;
+        font-size: 20px;
+        font-weight: bolder;
+     }
+     .container{
+        margin: 2px 2px;
+        padding: 2px 2px;
+        width: 50%;
+     }
+     .bgimg{
+        background-image: url(./assets_clone/asset\ 32.png);
+        width: 100%;
+        height: 50rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+     }
+     .section{
+        margin-top: 25px;
+     }
+     .heading1{
+        font-size: 2.8rem;
+        font-weight: bolder;
+        color:rgb(255, 255, 255);
+        
+        
+     }
+     .left1{
+        width: 40%;
+        margin-left: 5rem;
+        position: relative;
+        top: 100px;
+        left: 40px;
+        
+     }
+     .example{
+      display: flex;
+      gap: 4.5rem;
+      border: 1px solid rgb(185, 71, 71);
+      border-radius: 50px;
+      justify-content: center;
+      background-color: rgb(185, 34, 34) ;
+      color: white;
+      position: relative;
+      right: 40px;
+      margin-bottom: 35px;
+
+     }
+     .cmimg{
+      
+      position: relative;
+      
+
+
+      
+
+     }
+     .sapn1{
+      color: rgb(46, 162, 135);
+     }
+     .mid1{
+      border: 2px solid green;
+      width: 16%;
+      border-radius: 10px;
+      background-color: white;
+      padding: 50px;
+      height: 360px;
+      padding-top: 50px;
+      position: relative;
+      top: 50px;
+      left: 60px;
+      
+
+     }
+     .mid1 p{
+      font-size: 1.3rem;
+      
+     }
+     .btn1{
+      margin: 0px 9px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      border:  2px solid black;
+      position: relative;
+      right: 11px;
+      top: 1px;
+     }
+     .btn-para{
+      position: relative;
+      
+     }
+     .btn1:hover{
+      background-color: rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
+     }
+     .para1{
+      position: relative;
+      top:5px;
+      line-height: 1.6;
+     width: 98%;
+    
+     }
+     .heading2{
+      position: relative;
+      top: 20px;
+     }
+     .right1{
+      width: 16%;
+      border-radius: 10px;
+      background-color: white;
+      padding: 50px;
+      height: 360px;
+      padding-top: 50px;
+      position: relative;
+      left: 1110px;
+      bottom: 320px;
+     }
+     .para2{
+      margin-top: 5rem;
+      line-height: 1.6;
+     width: 98%;
+     position: relative;
+     top:25px;
+     font-size: large;
+     }
+     .heading3{
+      position: relative;
+      top: 70px;
+     }
+     .section2{
+      background-color: white;
+      height: 38rem;
+     }
+     .heading4{
+      position: relative;
+      left: 5rem;
+      font-size: 35px;
+     }
+     .para4{
+      position: relative;
+      left: 5rem;
+      font-size: 20px;
+      width: 60%;
+      
+     }
+     .left2{
+      
+      width: 25%;
+      border-radius: 10px;
+      position: relative;
+      left: 5rem;
+      height: 20rem;
+      background-color: #FFF3F4;
+      padding: 2.5rem;
+      
+     }
+     .mid2{
+ 
+      width: 25%;
+      border-radius: 10px;
+      margin: 0px 15rem;
+      background-color:#ECF3FE;
+      padding: 2.5rem;
+      height: 20rem;
+   
+     }
+     .right2{
+    
+      width: 25%;
+      border-radius: 10px;
+      position: relative;
+      right: 3rem;
+      background-color: #FAF2E6;
+      padding: 2.5rem;
+      height: 20rem;
+     }
+     .left2 p{
+      line-height:2;
+      font-size: 18px;
+      position: relative;
+      top: 30px;
+      
+     }
+     .mid2 p{
+      line-height:2;
+      font-size: 18px;
+      position: relative;
+      top: 30px;
+      
+     }
+     .right2 p{
+      line-height:2;
+      font-size: 18px;
+      position: relative;
+      top: 30px;
+     }
+     .section3{
+      background-color: rgb(188, 43, 43);
+     
+      height: 60rem;
+     }
+     .section3 h2{
+      color: white;
+      position: relative;
+      left: 6rem;
+      font-size: 40px;
+      width: 100%
+     }
+     .section3 p{
+      color: white;
+      position: relative;
+      left: 6rem;
+      font-size: 20px;
+      width: 100%;
+     }
+     .btn3{
+      margin: 0px 9px;
+      background-color: rgb(188, 43, 43);
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      border:  2px solid rgb(255, 255, 255);
+      position: relative;
+      left: 43rem;
+      top: 46rem;
+     }
+     .btn3:hover{
+      background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+     }
+     .slide1{
+      width:fit-content;
+      margin: 1rem;
+      height: 18%;
+     }
+     .slide2{
+      width:fit-content;
+      margin: 1rem;
+      height: 20px;
+     }
+     .slide3{
+      width:fit-content;
+      margin: 1rem;
+      height: 35rem;
+     }
+     .slide4{
+      width:fit-content;
+      margin: 1rem;
+      height: 20px;
+     }
+     .slide5{
+      width:fit-content;
+      margin: 1rem;
+      height: 20px;
+     }
+     .cardItems{
+      display: flex;
+      overflow: scroll;
+      scrollbar-width: none;
+      
+     }
+     .cardItems::-webkit-scrollbar{
+      display: none;
+     }
+     .heading5{
+      position: relative;
+      left: 40rem;
+      font-weight: bolder;
+      font-size: 35px;
+      position: relative;
+      top: 3rem;
+     }
+     .para5{
+      position: relative;
+      left: 25rem;
+      font-weight: bold;
+      font-size: 18px;
+      position:relative;
+      top: 2rem;
+     }
+     .sec4l1{
+    
+      height: 20rem;
+      width: 30%;
+      position:relative;
+      left: 3rem;
+      top: 6rem;
+     }
+     .sec4l1 img{
+      position: relative;
+      left: 11.5rem;
+     }
+     .sec4l1 h3{
+      position:relative;
+      left: 10rem;
+     }
+     .sec4l1 p{
+      position:relative;
+      left: 1.3rem;
+      font-size: 20px;
+      line-height: 1.7;   
+     }
+     .sec4l2{
+  
+      height: 20rem;
+      width: 30%;
+      position:relative;
+      left: 3rem;
+      top: 7rem;
+     }
+     .sec4l2 img{
+      position: relative;
+      left: 11.5rem;
+     }
+     .sec4l2 h3{
+      position:relative;
+      left: 10rem;
+     }
+     .sec4l2 p{
+      position:relative;
+      left: 1.3rem;
+      font-size: 20px;
+      line-height: 1.7;   
+     }
+     .sec4m1{
+     
+      height: 20rem;
+      width: 30%;
+      position:relative;
+      left: 5rem;
+      top: 6rem;
+     }
+     .sec4m1 img{
+      position: relative;
+      left: 11.5rem;
+     }
+     .sec4m1 h3{
+      position:relative;
+      left: 10rem;
+     }
+     .sec4m1 p{
+      position:relative;
+      left: 1.3rem;
+      font-size: 20px;
+      line-height: 1.7;   
+     }
+     .sec4m2{
+     
+      height: 20rem;
+      width: 30%;
+      position:relative;
+      left: 5rem;
+      top: 7rem;
+     }
+     .sec4m2 img{
+      position: relative;
+      left: 11.5rem;
+     }
+     .sec4m2 h3{
+      position:relative;
+      left: 10rem;
+     }
+     .sec4m2 p{
+      position:relative;
+      left: 1.3rem;
+      font-size: 20px;
+      line-height: 1.7;   
+     }
+     .sec4r1{
+     
+      height: 20rem;
+      width: 30%;
+      position:relative;
+      left: 8rem;
+      top: 6rem;
+     }
+     .sec4r1 img{
+      position: relative;
+      left: 11.5rem;
+     }
+     .sec4r1 h3{
+      position:relative;
+      left: 10rem;
+     }
+     .sec4r1 p{
+      position:relative;
+      left: 1.3rem;
+      font-size: 20px;
+      line-height: 1.7;   
+     }
+     .sec4r2{
+ 
+      height: 20rem;
+      width: 30%;
+      position:relative;
+      left: 8rem;
+      top: 7rem;
+     }
+     .sec4r2 img{
+      position: relative;
+      left: 11.5rem;
+     }
+     .sec4r2 h3{
+      position:relative;
+      left: 10rem;
+     }
+     .sec4r2 p{
+      position:relative;
+      left: 1.3rem;
+      font-size: 20px;
+      line-height: 1.7;   
+     }
+     .section4{
+      background-color: #FAF2E6;
+      height: 60rem;
+     }
+     .section5{
+     background-color: #FFFFFF;
+     height: 50rem;
+     width: 100%
+     }
+     .sec5p1{
+      position: relative;
+      left: 1.7rem;
+      top: 9rem;
+      font-size: 22px;
+      line-height: 2.2rem;
+     }
+     .sec5p2{
+      font-weight: 9999;
+     }
+     .section5 img{
+      position: relative;
+      left: 3.3rem;
+      top: 2rem;
+     }
+     .section5 h1{
+      position: relative;
+      left: 2.5rem;
+      font-size: 2.2rem;
+      height: 2rem;
+     }
+     .sec5l1{
+      position:relative;
+      right: 12rem;
+      top: 10rem;
+     
+      height: 40rem;
+      width: 40%;
+     }
+     .sec5r1{
+    
+      position:relative;
+      right: 5.5rem;
+      top: 7.5rem;
+      height: 40rem;
+      width: 40%;
+      background-color: #EBD4B6;   
+      border-radius: 15px;
+     }
+     .section6{
+      background-color: white;
+      width: 100%;
+      height:50rem;
+     }
+     .sec6l1{
+     
+      position: relative;
+      left:4rem;
+      top: 5rem;
+      height: 35rem;
+      width: 80%;
+      background-color: #C7313B;
+      border-radius: 15px;
+     }
+     .sec6l1 h1{
+      position:absolute;
+      z-index: 3;
+      font-size: 60px;
+      color:#FAF2E6;
+      padding: 0rem 20rem 0rem 5rem;
+      width: 60%;
+      height: 10rem;
+     }
+     .pattern1{
+     margin-left: 4%;
+     margin-top: 3%;
+     
+     }
+     .sec6btn1{
+     margin-top: 1%;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      padding: 20px 40px;
+
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      border:  2px solid rgb(0, 0, 0);
+     }
+     .sec6btn1:hover{
+      background-color:#C7313B;
+      color: black;
+     }
+     .sec6r1{
+     
+      position: relative;
+      top: 20rem;
+      right: 7rem;
+      height: 25rem;
+      width: 30%;
+      background-color: #FAF2E6;
+      border-radius: 15px;
+     }
+     .sec6btn2{
+      position: relative;
+      top: 1.5rem;
+      left: 2rem;
+      margin: 0px 9px;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      border:  2px solid rgb(0, 0, 0);
+     }
+     .sec6btn2:hover{
+      background-color: #FAF2E6;
+      color:black;
+     }
+     .sec6r1 h1{
+      position: relative;
+      left: 2rem;
+      font-size: 35px;
+      line-height: 3rem;
+      width: 80%;
+      font-weight: bolder;
+     }
+     .section7{
+      background-color: black;
+      width: 100%;
+      height: 25rem;
+     }
+     .f1{
+      position: relative;
+      left: 4rem;
+     
+      width: 15%
+     }
+     .f1 h2{
+      color: white;
+      font-size: 18px;
+      margin-left:2.1rem;
+     }
+     .f2{
+      position: relative;
+      left: 5rem;
+    
+      width: 15%;
+     
+     }
+     .f2 ul{
+      color:#ddd6d6;
+      list-style-type: none; 
+      line-height: 2.5rem;
+      font-size: 20px;
+      font-weight: bolder;
+     }
+     .f3{
+      position: relative;
+      left: 7rem;
+ 
+      width: 15%
+    
+     }
+     .f3 ul{
+      color:#ddd6d6;
+      list-style-type: none; 
+      line-height: 2.5rem;
+      font-size: 20px;
+      font-weight: bolder;
+     }
+     .f4{
+    
+      width: 15%;
+      position: relative;
+      left: 10rem;
+     }
+     .f4 ul{
+      color:#ddd6d6;
+      list-style-type: none; 
+      line-height: 2.5rem;
+      font-size: 20px;
+      font-weight: bolder;
+     }
+     .f5{
+      position: relative;
+      left: 12rem;
+ 
+      width: 15%
+     }
+     .f5 ul{
+      color:#ddd6d6;
+      list-style-type: none; 
+      line-height: 2.5rem;
+      font-size: 20px;
+      font-weight: bolder;
+     }
+     .f2 h3{
+      position: relative;
+      left: 2.5rem;
+      margin-top: 5rem;
+      margin-bottom: 2.2rem;
+      color:white;
+      font-size: 22px;
+     }
+     .f3 h3{
+      position: relative;
+      left: 2.5rem;
+      margin-top: 5rem;
+      margin-bottom: 2.2rem;
+      color:white;
+      font-size: 22px;
+     }
+     .f4 h3{
+      position: relative;
+      left: 2.5rem;
+      margin-top: 5rem;
+      margin-bottom: 2.2rem;
+      color:white;
+      font-size: 22px;
+     }
+     .f5 h3{
+      position: relative;
+      left: 2.5rem;
+      margin-top: 5rem;
+      margin-bottom: 2.2rem;
+      color:white;
+      font-size: 22px;
+     }
+     .icon{
+      margin-top: 6rem;
+      margin-left: 3.5rem;
+      width: 55px
+     }
+     .build{
+      width: 100px;
+      height: 6rem;
+      margin: 0px;
+     }
+</style>
+<body>
+<header class="header">
+    <!-- Left box for logo -->
+    <div class="flex">
+        <div >
+            <img src="./assets_clone/asset 0.png" class="left" alt="">
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Our Blog</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <button class="btn">Let's Connect</button>
+        </div>
+    </div>
+</header>    
+<section class="section">
+     <div class="bgimg">
+        <div class="flex">
+            <div class="left1">
+                <h1 class="heading1">Software, Web & App Development Partner for Startups to Fortune 500 Companies</h1>
+                <div class="example">
+                  <h3>9+ Years</h3>
+                  <h3>200+ Clients</h3>
+                  <h3>450+ Projects</h3>
+                </div>
+                <div class="cmpimg">
+                  <img src="./assets_clone/asset 1.png" alt="">
+                  <img src="./assets_clone/asset 2.png" alt="">
+                  <img src="./assets_clone/asset 3.png" alt="">
+                  <img src="./assets_clone/asset 4.png" alt="">
+                  <img src="./assets_clone/asset 5.png" alt="">
+                </div>
+            </div>
+            <div class="mid1">
+               <img class="build" src="./assets_clone/asset 6.png" alt="">
+               <div class="heading2"><h2>Enterprise</h2></div>
+               <div class="para1"><p>Are you a mid to large sized business? We can help you leverage <span class="span1">Cloud, Mobile, Analytics, AI</span> and thrive in the digital era!</p></div>
+               <button class="btn1"><div class="btn-para"> Learn more</button></div>
+            </div>
+            <div class="right1">
+               <div class="heading3"><h2>Startup</h2></div>
+               <div class="para2"><p>Treat us as your Partner, Dedicated Team and Virtual CTO. We will bring your next big idea to life as Mobile App or SaaS Product!</p></div>
+               <button class="btn1"><div class="btn-para"> Learn more</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+   <div class="section2">
+      <h2 class="heading4">Who we are</h2>
+      <p class="para4">We are an India based software development company, serving clients globally since 2012 by offering a
+         wide range of software, web and mobile app development services.</p>
+      <div class="flex">
+         <div class="left2">
+            <img src="./assets_clone/smile.svg" alt="">
+            <p>We are a customer-centric software development company, providing custom software development services to everyone, including small startups to large business organizations.</p>
+         </div>
+         <div class="mid2">
+            <img src="./assets_clone/man.svg" alt="">
+            <p>Our dedicated team of experts is capable of assisting you during the entire journey of software development from mapping ideas to building fully functional software that helps you thrive in the digital era.</p>
+         </div>
+         <div class="right2">
+            <img src="./assets_clone/bulb.svg" alt="">
+            <p>Over the years, our team has developed strong domain knowledge in a vast array of sectors that helps us in understanding the actual needs of our clients and delivering the best possible solution.</p>
+         </div>
+
+      </div>
+
+   </div>
+</section>
+<section>
+   <div class="section3 ">
+      <h2>Portfolio</h2>
+      <p>Recent projects that our team loved working on</p>
+      <button class="btn3">View all Projects</button>
+      <div class="cardItems"><div class="slide1">
+         <img src="./assets_clone/asset 13.png" alt="">
+      </div>
+      <div class="slide2">
+         <img src="./assets_clone/asset 14.png" alt="">
+      </div>
+      <div class="slide3">
+         <img src="./assets_clone/asset 15.png" alt="">
+      </div>
+      <div class="slide4">
+         <img src="./assets_clone/asset 16.png" alt="">
+      </div>
+      <div class="slide5">
+         <img src="./assets_clone/asset 17.png" alt="">
+      </div></div>
+   </div>
+</section>
+<section>
+   <div class="section4 ">
+      <h2 class="heading5">Why Acompworld</h2>
+      <p class="para5">There are reasons why we are the preferred choice of leading corporates
+         to startups and small businesses</p>
+     <div class="flex">
+      <div class="sec4l1">
+         <img src="./assets_clone/glob.svg" alt="">
+         <h3>360 ° Approach</h3>
+         <p>From ideation to delivery, and ongoing support, we cover the full lifecycle of enterprise applications.</p>
+      </div>
+      <div class="sec4m1">
+         <img src="./assets_clone/client.svg" alt="">
+         <h3>Client Centric</h3>
+         <p>Our boutique format allows us to maintain a highly customized approach and build a long-term partnership.</p>
+      </div>
+      <div class="sec4r1">
+         <img src="./assets_clone/Domain-Experts.svg" alt="">
+         <h3>Domain Experts</h3>
+         <p>We possess exceptional domain expertise and in-depth knowledge of niche technologies.</p>
+      </div>
+     </div> 
+     <div class="flex">
+     <div class="sec4l2">
+      <img src="./assets_clone/Time-to-Market.svg" alt="">
+      <h3>Time-to-Market</h3>
+      <p>High level expertise and a number of solutions accelerators enable fast product rollout and quick customizations.</p>
+     </div>   
+      <div class="sec4m2">
+         <img src="./assets_clone/A-Class Team.svg" alt="">
+         <h3>A-Class Team</h3>
+         <p>We leverage unparalleled software engineering expertise of our team to ensure client success.</p>
+      </div>
+      <div class="sec4r2">
+         <img src="./assets_clone/Great-Value.svg" alt="">
+         <h3>Great Value</h3>
+         <p>We work as a partner co-creating the best fit and most cost effective solution for your business.</p>
+      </div>
+     </div>
+   </div>
+</section>
+<section>
+   <div class="section5 flex">
+      <h1>Note from the CEO</h1>
+      <div class="sec5l1">
+         <h1>“Acompworld is a visionary and reliable technology partner for world-class businesses and disruptive startups.”</h1>
+         <p class="sec5p1">We bring to table a rare blend of technology expertise and strong business domain knowledge at affordable prices, enabling us to provide an unmatched return on your investments. Our primary focus is to always deliver high quality services backed by excellent after sales support to gain trust and build long-term relationships with our clients.</p>
+         <p class="sec5p1">I would be happy to connect with you to understand your business challenges and help you overcome them with the right technology.</p>
+      </div>
+      <div class="sec5r1">
+         <img src="./assets_clone/manish.png" alt="">
+      </div>
+   </div>
+</section>
+<section>
+   <div class="section6 flex" >
+      <div class="sec6l1">
+         <h1>Have a project idea? let's come together to build something great </h1>
+         <img class="pattern1" src="./assets_clone/pattarn1.svg" alt=""/>
+         <button class="sec6btn1">Talk to an Expert</button>
+      </div>
+      <div class="sec6r1">
+         <h1>Want to work in an innovation-driven, fast growing company?</h1>
+         <button class="sec6btn2">Drop your CV</button>
+      </div>
+   </div>
+</section>
+    <section>
+      <div class="section7 flex">
+         <div class="f1">
+            <img class="icon" src="./assets_clone/asset 29.png" alt="">
+            <h2>©2022 Acompworld</h2>
+         </div>
+         <div class="f2">
+            <h3>Find your way</h3>
+            <ul>
+               <li>Home</li>
+               <li>Enterprise</li>
+               <li>Startup</li>
+               <li>Projects</li>
+               <li>About</li>
+            </ul>
+         </div>
+         <div class="f3">
+            <h3>Services</h3>
+            <ul>
+               <li>Enterprise Software</li>
+               <li>Startup Apps & Websites</li>
+            </ul>
+         </div>
+         <div class="f4">
+            <h3>More from us</h3>
+            <ul>
+               <li>Carrers</li>
+               <li>Blogs</li>
+               <li>Contact</li>
+            </ul>
+         </div>
+         <div class="f5">
+            <h3>Channels</h3>
+            <ul>
+               <li>Linkedin</li>
+               <li>Facebook</li>
+               <li>Twitter</li>
+            </ul>
+         </div>
+      </div>
+    </section>
+</body>
+</html>
